@@ -17,3 +17,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.organization=swt301-group4
+            -Dsonar.projectKey=SWT301-Group4_Source-code-for-SWT301
